@@ -19,7 +19,7 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
  * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
  * IN THE SOFTWARE.
- * 
+ *
  * It's using GNU C extensions. If you're not using GCC, define NOGNU.
  * Define LOGLEVEL to change default (4).
  * Level 1: Show nothing
@@ -27,7 +27,7 @@
  * Level 3: Show errors & warnings
  * Level 4: Show errors, warnings & debug
  * Level 5: Show errors, warnings, debug, and info.
- * 
+ *
  * I think about reordering debug and info, if you'll need it, make change in this file.
  */
 
@@ -82,8 +82,8 @@
     #define log_warn(M, ...)
 #endif
 #if LOGLEVEL < 1
-    #undef log_error
-    #define log_error(M, ...)
+    #undef log_err
+    #define log_err(M, ...)
 #endif
 
 #endif
